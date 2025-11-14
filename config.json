@@ -1,0 +1,29 @@
+{
+  "inbounds": [{
+    "port": 443,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [{
+        "id": "f570b4ae-bb3e-498f-8337-1a6c512821b5",
+        "alterId": 0
+      }]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "certificates": [{
+          "certificateFile": "/etc/v2ray/fullchain.pem",
+          "keyFile": "/etc/v2ray/privkey.pem"
+        }]
+      },
+      "wsSettings": {
+        "path": "/ws"
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }]
+}
